@@ -26,7 +26,7 @@ let staffs = [
 
 staffList.innerHTML = '';
 staffs.forEach((staff, index) => {
-    const staffMember = document.createElement('div');
+    const staffMember = document.createElement('block');
     staffMember.innerHTML = `
         <h2>${staff.name} ${staff.surname}</h2>
         <p><strong>Username:</strong> ${staff.username}</p>
@@ -46,7 +46,7 @@ staffForm.addEventListener('submit', event => {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     
-    const staffMember = document.createElement('div');
+    const staffMember = document.createElement('block');
     staffMember.innerHTML = `
         <h2>${name} ${surname}</h2>
         <p><strong>Username:</strong> ${username}</p>
